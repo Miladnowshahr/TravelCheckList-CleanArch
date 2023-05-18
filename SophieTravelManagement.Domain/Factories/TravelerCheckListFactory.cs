@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Domain.Factories
 {
-    internal class TravelerCheckListFactory : ITravelerCheckListFactory
+    public class TravelerCheckListFactory : ITravelerCheckListFactory
     {
-        private readonly IEnumerable<ITravelerItemPolicy> _policies;
+        private readonly IEnumerable<ITravelerItemsPolicy> _policies;
 
-        public TravelerCheckListFactory(IEnumerable<ITravelerItemPolicy> policies)
+        public TravelerCheckListFactory(IEnumerable<ITravelerItemsPolicy> policies)
         {
             _policies = policies;
         }

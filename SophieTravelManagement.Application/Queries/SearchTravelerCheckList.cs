@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Application.Queries
 {
-    internal class SearchTravelerCheckList:IQuery<IEnumerable<TravelerCheckListDto>>
+    public class SearchTravelerCheckList:IQuery<IEnumerable<TravelerCheckListDto>>
     {
         public string SearchPhrase { get; set; }
     }

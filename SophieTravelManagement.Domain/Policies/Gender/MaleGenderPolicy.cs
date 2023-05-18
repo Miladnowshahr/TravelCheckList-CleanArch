@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Domain.Policies.Gender
 {
-    internal sealed class MaleGenderPolicy : ITravelerItemPolicy
+    internal sealed class MaleGenderPolicy : ITravelerItemsPolicy
     {
         public IEnumerable<TravelerItem> GenerateItems(PolicyData data)
         => new List<TravelerItem>()

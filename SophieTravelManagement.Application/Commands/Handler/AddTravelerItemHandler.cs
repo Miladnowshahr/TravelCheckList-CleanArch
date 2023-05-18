@@ -1,4 +1,5 @@
-﻿using SophieTravelManagement.Domain.Repositories;
+﻿using SophieTravelManagement.Application.Exceptions;
+using SophieTravelManagement.Domain.Repositories;
 using SophieTravelManagement.Domain.ValueObjects;
 using SophieTravelManagement.Shared.Abstraction.Command;
 using System;

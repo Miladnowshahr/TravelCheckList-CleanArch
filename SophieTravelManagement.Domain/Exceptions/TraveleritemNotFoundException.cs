@@ -11,7 +11,6 @@ namespace SophieTravelManagement.Domain.Exceptions
     {
         public string ItemName { get; }
         public TraveleritemNotFoundException(string itemName) : base($"Traveler item '{itemName} cannot be found.'") => ItemName = itemName;
-        {
-        }
+        
     }
 }

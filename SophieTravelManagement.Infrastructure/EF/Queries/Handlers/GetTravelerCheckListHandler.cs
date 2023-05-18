@@ -21,7 +21,7 @@ namespace SophieTravelManagement.Infrastructure.EF.Queries.Handlers
             => _travelerCheckLists = context.TravelerCheckList;
 
         public async Task<TravelerCheckListDto> HandleAsync(GetTravelerCheckList query)
-            => _travelerCheckLists
+            => await _travelerCheckLists
             .Include(i => i.Items)
             .Where(pl => pl.Id == query.Id)
             .Select(s=>s.AsDto())

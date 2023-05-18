@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.Domain", "SophieTravelManagement.Domain\SophieTravelManagement.Domain.csproj", "{8B770F2A-9BE1-465F-847F-3992D58520EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.Domain", "SophieTravelManagement.Domain\SophieTravelManagement.Domain.csproj", "{8B770F2A-9BE1-465F-847F-3992D58520EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6E34EBA1-B64B-4B8D-8F96-F24C3C515745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.Shared.Abstraction", "SophieTravelManagement.Shared.Abstraction\SophieTravelManagement.Shared.Abstraction.csproj", "{4572E0F7-9BEF-4D19-A9E2-A1ACA5568D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.Shared.Abstraction", "SophieTravelManagement.Shared.Abstraction\SophieTravelManagement.Shared.Abstraction.csproj", "{4572E0F7-9BEF-4D19-A9E2-A1ACA5568D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.Application", "SophieTravelManagement.Application\SophieTravelManagement.Application.csproj", "{46E08C0C-3AB3-4536-A7D7-0846C7C6F1BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.Application", "SophieTravelManagement.Application\SophieTravelManagement.Application.csproj", "{46E08C0C-3AB3-4536-A7D7-0846C7C6F1BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.API", "SophieTravelManagement.API\SophieTravelManagement.API.csproj", "{810A121F-043E-4273-8BC5-7176DD642F68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.API", "SophieTravelManagement.API\SophieTravelManagement.API.csproj", "{810A121F-043E-4273-8BC5-7176DD642F68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.Shared", "SophieTravelManagement.Shared\SophieTravelManagement.Shared.csproj", "{2F4C5DEE-B7FE-4D48-B923-3D4D115CEEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.Shared", "SophieTravelManagement.Shared\SophieTravelManagement.Shared.csproj", "{2F4C5DEE-B7FE-4D48-B923-3D4D115CEEEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.Infrastructure", "SophieTravelManagement.Infrastructure\SophieTravelManagement.Infrastructure.csproj", "{2AFD0401-720F-448A-8648-303D4277F3DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SophieTravelManagement.Infrastructure", "SophieTravelManagement.Infrastructure\SophieTravelManagement.Infrastructure.csproj", "{2AFD0401-720F-448A-8648-303D4277F3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieTravelManagement.UnitTests", "SophieTravelManagement.UnitTests\SophieTravelManagement.UnitTests.csproj", "{65BC3475-8017-4A85-A5A8-07E1A2E4F1CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{2AFD0401-720F-448A-8648-303D4277F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AFD0401-720F-448A-8648-303D4277F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AFD0401-720F-448A-8648-303D4277F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65BC3475-8017-4A85-A5A8-07E1A2E4F1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BC3475-8017-4A85-A5A8-07E1A2E4F1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BC3475-8017-4A85-A5A8-07E1A2E4F1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BC3475-8017-4A85-A5A8-07E1A2E4F1CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

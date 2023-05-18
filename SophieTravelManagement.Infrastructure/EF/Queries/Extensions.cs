@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Infrastructure.EF.Queries
 {
-    public static class Extensions
+    internal static class Extensions
     {
         public static TravelerCheckListDto AsDto(this TravelerCheckListReadModel readModel)
         {
@@ -24,7 +24,7 @@ namespace SophieTravelManagement.Infrastructure.EF.Queries
                 Items = readModel.Items?.Select(s => new TravelerItemDto
                 {
                     Name = s.Name,
-                    Qunatity = s.Qunatity,
+                    Qunatity = s.Quantity,
                     IsTaken = s.IsTaken,
                 })
             };

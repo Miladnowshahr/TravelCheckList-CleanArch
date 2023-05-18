@@ -26,6 +26,8 @@ namespace SophieTravelManagement.Shared.Abstraction.Domain
             _events.Add(@event);
         }
 
+        public void ClearEvents() => _events.Clear();
+
         protected void IncrementVersion()
         {
             if(_versionIncremented) return;

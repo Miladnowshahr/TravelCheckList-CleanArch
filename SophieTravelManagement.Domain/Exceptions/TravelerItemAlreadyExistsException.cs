@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Domain.Exceptions
 {
-    internal class TravelerItemAlreadyExistsException : TravelerCheckListException
+    public class TravelerItemAlreadyExistsException : TravelerCheckListException
     {
         public string ListName { get; }
         public string ItemName { get; }

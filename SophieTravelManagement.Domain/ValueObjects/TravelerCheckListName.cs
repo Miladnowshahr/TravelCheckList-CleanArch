@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SophieTravelManagement.Domain.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace SophieTravelManagement.Domain.ValueObjects
         public TravelerCheckListName(string value)
         {
             if (string.IsNullOrWhiteSpace(value))
-                throw new TravelerCheckListName();
+                throw new TravelerCheckListNameException();
 
             Value = value.Trim();
         }

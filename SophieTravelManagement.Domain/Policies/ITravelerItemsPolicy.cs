@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Domain.Policies
 {
-    internal interface ITravelerItemPolicy
+    public interface ITravelerItemsPolicy
     {
         bool IsApplicable(PolicyData data);
 

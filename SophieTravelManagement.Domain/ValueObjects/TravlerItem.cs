@@ -10,15 +10,15 @@ namespace SophieTravelManagement.Domain.ValueObjects
     public record TravelerItem
     {
         public string Name { get; }
-        public uint Qunatity { get; }
+        public uint Quantity { get; }
         public bool IsTaken { get; init; }
-        public TravelerItem(string name,uint qunatity, bool isToken = false)
+        public TravelerItem(string name, uint quantity, bool isToken = false)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new TravelerItemNameException();
             Name = name;
-            Qunatity= qunatity;
-            IsToken= isToken;
+            Quantity = quantity;
+            IsTaken = isToken;
         }
     }
 }

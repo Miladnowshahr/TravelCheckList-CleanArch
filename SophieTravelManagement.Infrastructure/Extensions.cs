@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SophieTravelManagement.Application.Services;
 using SophieTravelManagement.Infrastructure.EF;
+using SophieTravelManagement.Infrastructure.Logging;
 using SophieTravelManagement.Infrastructure.Services;
 using SophieTravelManagement.Shared.Abstraction.Command;
 using SophieTravelManagement.Shared.Queries;

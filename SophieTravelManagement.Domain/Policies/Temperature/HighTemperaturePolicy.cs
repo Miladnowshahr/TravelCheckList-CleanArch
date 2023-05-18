@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Domain.Policies.Temperature
 {
-    internal sealed class HighTemperaturePolicy : ITravelerItemPolicy
+    internal sealed class HighTemperaturePolicy : ITravelerItemsPolicy
     {
         public IEnumerable<TravelerItem> GenerateItems(PolicyData data)
             => new List<TravelerItem>

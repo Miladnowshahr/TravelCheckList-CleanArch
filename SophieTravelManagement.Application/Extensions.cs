@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using SophieTravelManagement.Domain.Factories;
+using SophieTravelManagement.Domain.Policies;
 using SophieTravelManagement.Shared.Commands;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,9 @@ namespace SophieTravelManagement.Application
             services.AddSingleton<ITravelerCheckListFactory, TravelerCheckListFactory>();
 
             services.Scan(b => b.FromAssemblies(typeof(ITravelerItemsPolicy).Assembly)
-            .AddClasses(c => c.AssignableTo<ItravelItemsPolicy>())
-            .AsImplementedInterfaces()
-            .WithSingletonLifetime());
+                .AddClasses(c => c.AssignableTo<ITravelerItemsPolicy>())
+                .AsImplementedInterfaces()
+                .WithSingletonLifetime());
 
             return services;
         }

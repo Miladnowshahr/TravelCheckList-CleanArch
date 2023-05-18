@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace SophieTravelManagement.Application.Commands.Handler
 {
-    internal sealed class CreateTravelerCheckListWithItemHandler : ICommandHandler<CreateTravelerCheckListWithItem>
+    public sealed class CreateTravelerCheckListWithItemHandler : ICommandHandler<CreateTravelerCheckListWithItem>
     {
         private readonly ITravelerCheckListRepository _repository;
         private readonly IWeatherService _weatherService;

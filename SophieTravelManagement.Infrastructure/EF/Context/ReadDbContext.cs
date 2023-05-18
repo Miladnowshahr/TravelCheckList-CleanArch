@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SophieTravelManagement.Infrastructure.EF.Config;
+using SophieTravelManagement.Infrastructure.EF.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace SophieTravelManagement.Infrastructure.EF.Context
     {
         public ReadDbContext(DbContextOptions<ReadDbContext> dbcontext) : base(dbcontext) { }
 
-        public DbSet<TravelerChecListReadModel> TravelerCheckList { get; set; }
+        public DbSet<TravelerCheckListReadModel> TravelerCheckList { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
